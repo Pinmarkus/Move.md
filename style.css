@@ -289,6 +289,20 @@ html { scroll-behavior: smooth; }
   z-index: -1;
 }
 
+.about-center {
+  color: #000;         /* text negru */
+  font-weight: 700;    /* text gros */
+  font-size: 18px;     /* opțional, pentru text puțin mai mare */
+}
+.about-center.section-title {
+  font-size: 36px;      /* dimensiune mai mare */
+  font-weight: 800;     /* text gros */
+  color: #000;          /* negru */
+  margin-bottom: 20px;  /* spațiu sub titlu, opțional */
+  text-align: center;   /* centrare, dacă vrei */
+}
+
+
 /* Anchor offset for fixed header */
 section { scroll-margin-top: 100px; }
 .card-icon { font-size: 28px; }
