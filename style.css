@@ -84,11 +84,22 @@ html { scroll-behavior: smooth; }
 /* Hero */
 .hero { padding: 0; }
 .hero-photo {
-  background: #0b1220 url('images/5.jpg') center/cover no-repeat;
+  /* Slideshow backgrounds controlled via CSS vars set from JS */
+  background: #0b1220 var(--hero-bg, url('images/5.jpg')) center/cover no-repeat;
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
+}
+.hero-photo::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: var(--hero-bg-next, none) center/cover no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.hero-photo.is-fading::before {
+  opacity: 1;
 }
 .hero-photo::after {
   content: '';

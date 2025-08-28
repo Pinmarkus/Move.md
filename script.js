@@ -184,6 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initYear();
   restoreLanguage();
   initLanguageSwitcher();
+  initHeroSlideshow();
 });
 
 // One-liners i18n
@@ -259,3 +260,54 @@ translations.ru.about_reason3 = 'Цены от 600 леев, полная про
 translations.en.about_reason1 = 'Response in 15 minutes in Chișinău';
 translations.en.about_reason2 = 'Exterior lift up to 30 m';
 translations.en.about_reason3 = 'Prices from 600 MDL, fully transparent';
+
+// Hero background slideshow (images 1..5), changes every 3s with fade
+function initHeroSlideshow() {
+  const hero = document.querySelector('.hero-photo');
+  if (!hero) return;
+
+  const imageUrls = [
+    'images/1.jpg',
+    'images/2.jpg',
+    'images/3.jpg',
+    'images/4.jpg',
+    'images/5.jpg'
+  ];
+
+  // Preload images
+  imageUrls.forEach(src => { const img = new Image(); img.src = src; });
+
+  let currentIndex = 0;
+
+  // Initialize first background
+  hero.style.setProperty('--hero-bg', `url('${imageUrls[currentIndex]}')`);
+
+  const visibleDurationMs = 3000; // fully visible time per image
+  const fadeDurationMs = 500; // must match CSS transition
+
+  function cycleOnce() {
+    setTimeout(() => {
+      const nextIndex = (currentIndex + 1) % imageUrls.length;
+      const currentUrl = imageUrls[currentIndex];
+      const nextUrl = imageUrls[nextIndex];
+
+      hero.style.setProperty('--hero-bg-next', `url('${nextUrl}')`);
+      hero.classList.add('is-fading');
+
+      setTimeout(() => {
+        // Finalize swap: set main bg to next and hide overlay
+        hero.style.setProperty('--hero-bg', `url('${nextUrl}')`);
+        hero.classList.remove('is-fading');
+
+        // Wait for overlay to fully reach opacity 0 before changing its image
+        setTimeout(() => {
+          hero.style.setProperty('--hero-bg-next', `url('${currentUrl}')`);
+          currentIndex = nextIndex;
+          cycleOnce(); // schedule next after overlay is fully hidden
+        }, fadeDurationMs);
+      }, fadeDurationMs);
+    }, visibleDurationMs);
+  }
+
+  cycleOnce();
+}
