@@ -2,7 +2,7 @@ const translations = {
   ro: {
     brand: 'Move.md',
     language_label: 'Limbă',
-    cta_call: 'Sună acum',
+    cta_call: 'Comanda acum',
     request_quote: 'Cere ofertă',
     tagline: 'Transport cu evacuator, oriunde, oricând.',
     hero_title: 'Transportăm tot ce ai nevoie, în siguranță',
@@ -305,9 +305,9 @@ function initHeroSlideshow() {
 
   const imageUrls = [
     'images/1.jpg',
-    'images/2.jpg',
+    'images/12.jpg',
     'images/3.jpg',
-    'images/4.jpg',
+    'images/11.jpg',
     'images/5.jpg'
   ];
 
