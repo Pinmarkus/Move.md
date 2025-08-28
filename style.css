@@ -47,6 +47,7 @@ html { scroll-behavior: smooth; }
 }
 
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; }
+.brand-link { display: block; text-decoration: none; }
 .logo-img { height: 75px; width: auto; display: block; }
 
 .header-actions { display: flex; align-items: center; gap: 12px; }
@@ -186,7 +187,7 @@ html { scroll-behavior: smooth; }
 /* Make second row images slightly taller and fill without white margins */
 .gallery-grid .shot:nth-child(n+4) img { height: 360px; object-fit: cover; object-position: center; }
 .shot figcaption { padding: 10px 12px; color: #374151; }
-.gallery-actions { margin-top: 16px; text-align: center; }
+.gallery-actions { margin: 0; text-align: center; }
 @media (min-width: 901px) {
   .gallery-actions { display: none; }
 }
@@ -211,6 +212,9 @@ html { scroll-behavior: smooth; }
     opacity: 1;
     transform: translateY(0);
   }
+  /* State-specific spacing for the toggle button (consistent in both states) */
+  .gallery-grid + .gallery-actions { margin-top: 16px; }
+  .gallery-grid.is-expanded + .gallery-actions { margin-top: 16px; }
 }
 
 /* Gallery boxed diagonal border */
