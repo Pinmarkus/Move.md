@@ -166,14 +166,74 @@ html { scroll-behavior: smooth; }
   border-radius: 12px; 
   padding: 10px 12px; 
 }
-.benefits .section-title { text-align: center; }
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; text-align: center; background: #fff; }
-.benefits { padding: 28px 0; background: #ffffff; }
-.benefits-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-.benefit { display: grid; grid-template-columns: 44px 1fr; gap: 10px; align-items: center; border: 1px solid #e5e7eb; border-radius: 12px; padding: 12px 14px; }
-.benefit-ico { font-size: 28px; color: #f59e0b; text-align: center; }
-.benefit-text { font-weight: 600; }
+/* --- Titlu principal Avantajele noastre --- */
+.benefits-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* pe verticală */
+  align-items: center;     /* pe orizontală */
+  min-height: 100vh;       /* ocupă tot ecranul */
+  text-align: center;
+}
+
+#benefits .section-title {
+  text-align: center;   /* îl centrează pe orizontală */
+  margin-left: auto;    /* împinge spre centru */
+  margin-right: auto;   /* împinge spre centru */
+  display: block;
+  width: fit-content;   /* se micșorează la dimensiunea textului */
+}
+
+
+
+
+/* --- Casetele cu avantaje --- */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* totul pe mijloc */
+  text-align: center;
+  border: 2px solid #facc15;
+  border-radius: 12px;
+  padding: 20px 14px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.benefit-ico {
+  font-size: 36px;
+  color: #f59e0b;
+  margin-bottom: 12px;
+}
+
+.benefit-text {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 0 8px;
+  color: #111827;
+}
+
+.benefit-desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #374151;
+  margin: 0;
+}
+
+/* Responsive pentru avantaje */
+@media (max-width: 900px) {
+  .benefits-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .benefits-grid { grid-template-columns: 1fr; }
+}
+
 
 .gallery { padding: 28px 0; }
 .gallery .section-title { text-align: center; }
@@ -263,6 +323,39 @@ section { scroll-margin-top: 100px; }
 .phone a { color: #2563eb; text-decoration: none; }
 .email a { color: #111827; text-decoration: none; }
 .email a:hover { text-decoration: underline; }
+
+.socials-icons {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #111827; /* fundal întunecat */
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+/* Culori specifice brand */
+.social-icon.tiktok { background: #010101; color: #69C9D0; }
+.social-icon.facebook { background: #1877F2; color: #fff; }
+
+
 
 /* Footer */
 .site-footer { border-top: 1px solid #e5e7eb; padding: 16px 0; color: #6b7280; }

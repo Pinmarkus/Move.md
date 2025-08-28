@@ -57,7 +57,7 @@ const translations = {
 
 // Extra sections translations
 translations.ro.about_title = 'Despre Move.md';
-translations.ro.about_desc = 'Suntem o echipă locală specializată în evacuări și transport rapid, în siguranță, în toată Moldova. Intervenim 24/7.';
+translations.ro.about_desc = 'Suntem o echipă specializată în ridicarea/coborârea materialelor de construcții,mobilă,deșeuri și transport în Republica Moldova.Intervenim 24/7.';
 translations.ro.why_title = 'De ce noi';
 translations.ro.why_1 = 'Răspuns rapid și disponibilitate 24/7';
 translations.ro.why_2 = 'Prețuri clare — de la 600 lei';
@@ -73,7 +73,7 @@ translations.ro.faq_q2 = 'Lucrați non-stop?';
 translations.ro.faq_a2 = 'Da, suntem disponibili 24/7, inclusiv în weekend și sărbători.';
 
 translations.ru.about_title = 'О Move.md';
-translations.ru.about_desc = 'Мы местная команда, специализируемся на эвакуаторе и быстрых безопасных перевозках по всей Молдове. Работаем 24/7.';
+translations.ru.about_desc = 'Мы — команда, специализирующаяся на подъёме/спуске строительных материалов, мебели, отходов и перевозках в Республике Молдова. Мы работаем круглосуточно и без выходных.';
 translations.ru.why_title = 'Почему мы';
 translations.ru.why_1 = 'Быстрый выезд и доступность 24/7';
 translations.ru.why_2 = 'Прозрачные цены — от 600 леев';
@@ -89,7 +89,7 @@ translations.ru.faq_q2 = 'Работаете круглосуточно?';
 translations.ru.faq_a2 = 'Да, 24/7, включая выходные и праздники.';
 
 translations.en.about_title = 'About Move.md';
-translations.en.about_desc = 'We are a local team specialized in towing and fast, safe transport across Moldova. Available 24/7.';
+translations.en.about_desc = 'We are a team specialized in lifting/lowering construction materials, furniture, waste and transport in the Republic of Moldova. We intervene 24/7.';
 translations.en.why_title = 'Why choose us';
 translations.en.why_1 = 'Fast response and 24/7 availability';
 translations.en.why_2 = 'Transparent pricing — from 600 MDL';
@@ -104,16 +104,29 @@ translations.en.faq_a1 = 'In Chișinău — from 600 MDL. Outside the city — p
 translations.en.faq_q2 = 'Do you work non-stop?';
 translations.en.faq_a2 = 'Yes, we are available 24/7, including weekends and holidays.';
 
+translations.ro.about_reason1 = 'Răspuns în 15 minute în Chișinău';
+translations.ro.about_reason2 = 'Ridicare până la 30 m cu lift exterior';
+translations.ro.about_reason3 = 'Prețuri de la 600 lei, transparență totală';
+
+translations.ru.about_reason1 = 'Быстрый выезд и доступность за 15 минут в Кишинёве';
+translations.ru.about_reason2 = 'Подъём до 30 м с внешним подъемником';
+translations.ru.about_reason3 = 'Цены от 600 леев, полная прозрачность';
+
+translations.en.about_reason1 = 'Response within 15 minutes in Chișinău';
+translations.en.about_reason2 = 'Lift up to 30 m with exterior hoist';
+translations.en.about_reason3 = 'Prices from 600 MDL, fully transparent';
+
+
 // Hero lines and new sections i18n
 translations.ro.hero_line1 = 'RIDICĂM MĂRFURI';
 translations.ro.hero_line2 = 'PÂNĂ LA 30 METRI';
 translations.ro.hero_line3 = 'RAPID ȘI ÎN SIGURANȚĂ';
 translations.ro.cta_order = 'Comandă';
 translations.ro.benefits_title = 'Avantajele noastre';
-translations.ro.benefit_1 = 'Livrare și montaj în 15 minute';
-translations.ro.benefit_2 = 'Ridică până la 30 metri';
-translations.ro.benefit_3 = 'Economisește timp și bani';
-translations.ro.benefit_4 = 'Prețuri accesibile — de la 600 lei';
+translations.ro.benefit_1 = 'Mobilier Protejat';
+translations.ro.benefit_2 = 'Fără Demontare';
+translations.ro.benefit_3 = 'Eficiență';
+translations.ro.benefit_4 = 'Fără Probleme';
 translations.ro.gallery_title = 'Galerie lucrări';
 translations.ro.gallery_cap1 = 'Încărcare materiale, etajul 6';
 translations.ro.gallery_cap2 = 'Mutare mobilă, etajul 8';
@@ -124,10 +137,10 @@ translations.ru.hero_line2 = 'ДО 30 МЕТРОВ';
 translations.ru.hero_line3 = 'БЫСТРО И БЕЗОПАСНО';
 translations.ru.cta_order = 'Заказать';
 translations.ru.benefits_title = 'Наши преимущества';
-translations.ru.benefit_1 = 'Доставка и монтаж за 15 минут';
-translations.ru.benefit_2 = 'Подъём до 30 метров';
-translations.ru.benefit_3 = 'Экономия времени и средств';
-translations.ru.benefit_4 = 'Доступные цены — от 600 леев';
+translations.ru.benefit_1 = 'Защищенная мебель';
+translations.ru.benefit_2 = 'Без разборки';
+translations.ru.benefit_3 = 'Эффективность';
+translations.ru.benefit_4 = 'Без проблем';
 translations.ru.gallery_title = 'Галерея работ';
 translations.ru.gallery_cap1 = 'Погрузка стройматериалов, 6 этаж';
 translations.ru.gallery_cap2 = 'Переезд мебели, 8 этаж';
@@ -138,10 +151,10 @@ translations.en.hero_line2 = 'UP TO 30 METERS';
 translations.en.hero_line3 = 'FAST AND SAFE';
 translations.en.cta_order = 'Order';
 translations.en.benefits_title = 'Our benefits';
-translations.en.benefit_1 = 'Delivery and setup in 15 minutes';
-translations.en.benefit_2 = 'Lifts up to 30 meters';
-translations.en.benefit_3 = 'Save time and money';
-translations.en.benefit_4 = 'Affordable prices — from 600 MDL';
+translations.en.benefit_1 = 'Protected Furniture';
+translations.en.benefit_2 = 'No Disassembly';
+translations.en.benefit_3 = 'Efficiency';
+translations.en.benefit_4 = 'No Problems';
 translations.en.gallery_title = 'Work gallery';
 translations.en.gallery_cap1 = 'Loading materials, 6th floor';
 translations.en.gallery_cap2 = 'Moving furniture, 8th floor';
@@ -234,33 +247,56 @@ translations.en.nav_contact = 'Contact';
 
 
 // Services bullet points i18n
-translations.ro.svc_point1 = 'Evacuator auto, utilaje și ATV';
-translations.ro.svc_point2 = 'Transport mobilier, electrocasnice, materiale';
-translations.ro.svc_point3 = 'Ridicare cu lift exterior până la 30 m';
-translations.ro.svc_point4 = 'Asistență rutieră, tracțiune și relocări';
+// Services bullet points i18n
+translations.ro.svc_point1 = 'Ridicăm și coborâm orice până la 30m';
+translations.ro.svc_point2 = 'Ridicare, coborâre materiale de construcții, deșeuri';
+translations.ro.svc_point3 = 'Evacuare deșeuri';
+translations.ro.svc_point4 = 'Transport, container';
+translations.ro.svc_point5 = 'Hamali';
 
-translations.ru.svc_point1 = 'Эвакуатор авто, техники и ATV';
-translations.ru.svc_point2 = 'Перевозка мебели, техники и материалов';
-translations.ru.svc_point3 = 'Подъём внешним лифтом до 30 м';
-translations.ru.svc_point4 = 'Дорожная помощь, буксировка и переезды';
+translations.ru.svc_point1 = 'Поднимаем и опускаем любой груз до 30 м';
+translations.ru.svc_point2 = 'Подъём и спуск стройматериалов, отходов';
+translations.ru.svc_point3 = 'Вывоз строительного мусора';
+translations.ru.svc_point4 = 'Транспортировка, контейнер';
+translations.ru.svc_point5 = 'Грузчики';
 
-translations.en.svc_point1 = 'Tow truck for cars, machinery and ATVs';
-translations.en.svc_point2 = 'Transport furniture, appliances, materials';
-translations.en.svc_point3 = 'Exterior lift up to 30 m';
-translations.en.svc_point4 = 'Roadside assistance, towing and relocations';
+translations.en.svc_point1 = 'We lift and lower anything up to 30m';
+translations.en.svc_point2 = 'Lifting and lowering construction materials, debris';
+translations.en.svc_point3 = 'Waste removal';
+translations.en.svc_point4 = 'Transport, container';
+translations.en.svc_point5 = 'Movers';
 
-// About reasons i18n
-translations.ro.about_reason1 = 'Răspuns în 15 minute în Chișinău';
-translations.ro.about_reason2 = 'Ridicare până la 30 m cu lift exterior';
-translations.ro.about_reason3 = 'Prețuri de la 600 lei, transparență totală';
 
-translations.ru.about_reason1 = 'Выезд за 15 минут по Кишинёву';
-translations.ru.about_reason2 = 'Подъём внешним лифтом до 30 м';
-translations.ru.about_reason3 = 'Цены от 600 леев, полная прозрачность';
+// Benefits i18n
+translations.ro.benefit_1 = 'Mobilier Protejat';
+translations.ro.benefit_1_desc = 'Protejarea mobilierului va fi mult mai bună (riscul de atingere pe scări fiind eliminat).';
+translations.ro.benefit_2 = 'Fără Demontare';
+translations.ro.benefit_2_desc = 'Posibilitatea ca anumite piese de mobilier să fie luate ca atare fără demontarea lor.';
+translations.ro.benefit_3 = 'Eficiență';
+translations.ro.benefit_3_desc = 'Suntem soluția cea mai eficientă pentru a ridica sau a coborî mobila de la domiciliul dumneavoastră.';
+translations.ro.benefit_4 = 'Fără Probleme';
+translations.ro.benefit_4_desc = 'Nu se vor deteriora scările, liftul blocului și pereții.';
 
-translations.en.about_reason1 = 'Response in 15 minutes in Chișinău';
-translations.en.about_reason2 = 'Exterior lift up to 30 m';
-translations.en.about_reason3 = 'Prices from 600 MDL, fully transparent';
+// RU (traducere aproximativă)
+translations.ru.benefit_1 = 'Защита мебели';
+translations.ru.benefit_1_desc = 'Мебель будет лучше защищена (исключается риск задеть её на лестнице).';
+translations.ru.benefit_2 = 'Без разборки';
+translations.ru.benefit_2_desc = 'Некоторые предметы мебели можно переносить целиком без разборки.';
+translations.ru.benefit_3 = 'Эффективность';
+translations.ru.benefit_3_desc = 'Мы самое эффективное решение для подъёма или спуска мебели на ваш этаж.';
+translations.ru.benefit_4 = 'Без проблем';
+translations.ru.benefit_4_desc = 'Не будут повреждены лестницы, лифт или стены дома.';
+
+// EN
+translations.en.benefit_1 = 'Protected Furniture';
+translations.en.benefit_1_desc = 'Your furniture will be better protected (no risk of hitting stairs).';
+translations.en.benefit_2 = 'No Disassembly';
+translations.en.benefit_2_desc = 'Some furniture can be carried as is, without disassembly.';
+translations.en.benefit_3 = 'Efficiency';
+translations.en.benefit_3_desc = 'We are the most efficient solution to lift or lower your furniture safely.';
+translations.en.benefit_4 = 'No Problems';
+translations.en.benefit_4_desc = 'Stairs, elevators and walls will not be damaged.';
+
 
 // Hero background slideshow (images 1..5), changes every 3s with fade
 function initHeroSlideshow() {
