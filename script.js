@@ -185,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
   restoreLanguage();
   initLanguageSwitcher();
   initHeroSlideshow();
+  initGalleryToggle();
 });
 
 // One-liners i18n
@@ -310,4 +311,43 @@ function initHeroSlideshow() {
   }
 
   cycleOnce();
+}
+
+// Gallery mobile toggle: show only first 2 by default, expand/collapse
+function initGalleryToggle() {
+  const grid = document.querySelector('.gallery-grid');
+  const btn = document.querySelector('.gallery-toggle');
+  if (!grid || !btn) return;
+
+  const labels = {
+    ro: { more: 'Arată mai multe', less: 'Ascunde' },
+    ru: { more: 'Показать ещё', less: 'Скрыть' },
+    en: { more: 'Show more', less: 'Hide' }
+  };
+
+  function currentLang() {
+    return document.documentElement.lang || 'ro';
+  }
+
+  function updateLabel(expanded) {
+    const lang = currentLang();
+    const dict = labels[lang] || labels.ro;
+    btn.textContent = expanded ? dict.less : dict.more;
+    btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  }
+
+  // Update label on language change too
+  const select = document.getElementById('lang');
+  if (select) {
+    select.addEventListener('change', () => {
+      updateLabel(grid.classList.contains('is-expanded'));
+    });
+  }
+
+  updateLabel(false);
+
+  btn.addEventListener('click', () => {
+    const expanded = grid.classList.toggle('is-expanded');
+    updateLabel(expanded);
+  });
 }

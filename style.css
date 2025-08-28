@@ -186,6 +186,32 @@ html { scroll-behavior: smooth; }
 /* Make second row images slightly taller and fill without white margins */
 .gallery-grid .shot:nth-child(n+4) img { height: 360px; object-fit: cover; object-position: center; }
 .shot figcaption { padding: 10px 12px; color: #374151; }
+.gallery-actions { margin-top: 16px; text-align: center; }
+@media (min-width: 901px) {
+  .gallery-actions { display: none; }
+}
+
+/* Mobile: show only first 2 images by default, expandable */
+@media (max-width: 600px) {
+  /* Remove outer decorative border on mobile to avoid bottom overhang */
+  .gallery .gallery-grid::before { display: none; }
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-grid .shot { overflow: hidden; }
+  .gallery-grid .shot:nth-child(n+3) {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  .gallery-grid.is-expanded .shot {
+    max-height: 1000px; /* enough to reveal image */
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* Gallery boxed diagonal border */
 .gallery .container { position: relative; }
