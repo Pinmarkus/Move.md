@@ -1,0 +1,261 @@
+const translations = {
+  ro: {
+    brand: 'Move.md',
+    language_label: 'Limbă',
+    cta_call: 'Sună acum',
+    request_quote: 'Cere ofertă',
+    tagline: 'Transport cu evacuator, oriunde, oricând.',
+    hero_title: 'Transportăm tot ce ai nevoie, în siguranță',
+    hero_subtitle: 'De la 600 lei. Sună acum: 060786666',
+    services_title: 'Servicii',
+    service_1: 'Evacuator auto și utilaje',
+    service_2: 'Transport mărfuri voluminoase',
+    service_3: 'Asistență rutieră și relocări',
+    pricing_title: 'Tarife',
+    pricing_desc: 'Prețuri de la 600 lei în Chișinău; în afara orașului — la kilometru. Cere ofertă.',
+    contact_title: 'Contact',
+    contact_desc: 'Suntem disponibili 24/7. Ne găsești la',
+    phone_label: 'Telefon'
+  },
+  ru: {
+    brand: 'Move.md',
+    language_label: 'Язык',
+    cta_call: 'Позвонить сейчас',
+    request_quote: 'Запросить цену',
+    tagline: 'Эвакуатор и перевозки, везде и в любое время.',
+    hero_title: 'Перевезём всё, что нужно, безопасно',
+    hero_subtitle: 'От 600 леев. Звоните: 060786666',
+    services_title: 'Услуги',
+    service_1: 'Эвакуатор авто и техники',
+    service_2: 'Перевозка крупногабаритных грузов',
+    service_3: 'Дорожная помощь и переезды',
+    pricing_title: 'Тарифы',
+    pricing_desc: 'Цены от 600 леев по Кишинёву; за городом — по километражу. Запросите цену.',
+    contact_title: 'Контакт',
+    contact_desc: 'Мы на связи 24/7. Наш номер',
+    phone_label: 'Телефон'
+  },
+  en: {
+    brand: 'Move.md',
+    language_label: 'Language',
+    cta_call: 'Call now',
+    request_quote: 'Get a quote',
+    tagline: 'Tow truck and transport, anywhere, anytime.',
+    hero_title: 'We transport everything you need, safely',
+    hero_subtitle: 'From 600 MDL. Call: 060786666',
+    services_title: 'Services',
+    service_1: 'Tow truck for cars and equipment',
+    service_2: 'Large goods transportation',
+    service_3: 'Roadside assistance and relocations',
+    pricing_title: 'Pricing',
+    pricing_desc: 'Prices from 600 MDL in Chișinău; outside the city — per km. Get a quote.',
+    contact_title: 'Contact',
+    contact_desc: 'We are available 24/7. Reach us at',
+    phone_label: 'Phone'
+  }
+};
+
+// Extra sections translations
+translations.ro.about_title = 'Despre Move.md';
+translations.ro.about_desc = 'Suntem o echipă locală specializată în evacuări și transport rapid, în siguranță, în toată Moldova. Intervenim 24/7.';
+translations.ro.why_title = 'De ce noi';
+translations.ro.why_1 = 'Răspuns rapid și disponibilitate 24/7';
+translations.ro.why_2 = 'Prețuri clare — de la 600 lei';
+translations.ro.why_3 = 'Echipamente profesioniste și șoferi experimentați';
+translations.ro.steps_title = 'Cum lucrăm';
+translations.ro.step_1 = 'Ne suni sau ne scrii pentru detalii';
+translations.ro.step_2 = 'Primim locația și estimăm costul';
+translations.ro.step_3 = 'Venim, încărcăm și transportăm în siguranță';
+translations.ro.faq_title = 'Întrebări frecvente';
+translations.ro.faq_q1 = 'Care este prețul?';
+translations.ro.faq_a1 = 'În Chișinău — de la 600 lei. În afara orașului — la kilometru.';
+translations.ro.faq_q2 = 'Lucrați non-stop?';
+translations.ro.faq_a2 = 'Da, suntem disponibili 24/7, inclusiv în weekend și sărbători.';
+
+translations.ru.about_title = 'О Move.md';
+translations.ru.about_desc = 'Мы местная команда, специализируемся на эвакуаторе и быстрых безопасных перевозках по всей Молдове. Работаем 24/7.';
+translations.ru.why_title = 'Почему мы';
+translations.ru.why_1 = 'Быстрый выезд и доступность 24/7';
+translations.ru.why_2 = 'Прозрачные цены — от 600 леев';
+translations.ru.why_3 = 'Профессиональное оборудование и опытные водители';
+translations.ru.steps_title = 'Как мы работаем';
+translations.ru.step_1 = 'Звоните или пишите нам';
+translations.ru.step_2 = 'Получаем локацию и оцениваем стоимость';
+translations.ru.step_3 = 'Приезжаем, грузим и везём безопасно';
+translations.ru.faq_title = 'Частые вопросы';
+translations.ru.faq_q1 = 'Какая цена?';
+translations.ru.faq_a1 = 'По Кишинёву — от 600 леев. За городом — по километражу.';
+translations.ru.faq_q2 = 'Работаете круглосуточно?';
+translations.ru.faq_a2 = 'Да, 24/7, включая выходные и праздники.';
+
+translations.en.about_title = 'About Move.md';
+translations.en.about_desc = 'We are a local team specialized in towing and fast, safe transport across Moldova. Available 24/7.';
+translations.en.why_title = 'Why choose us';
+translations.en.why_1 = 'Fast response and 24/7 availability';
+translations.en.why_2 = 'Transparent pricing — from 600 MDL';
+translations.en.why_3 = 'Pro equipment and experienced drivers';
+translations.en.steps_title = 'How we work';
+translations.en.step_1 = 'Call or message us for details';
+translations.en.step_2 = 'Share your location and get a cost estimate';
+translations.en.step_3 = 'We arrive, load, and deliver safely';
+translations.en.faq_title = 'FAQ';
+translations.en.faq_q1 = 'What is the price?';
+translations.en.faq_a1 = 'In Chișinău — from 600 MDL. Outside the city — per km.';
+translations.en.faq_q2 = 'Do you work non-stop?';
+translations.en.faq_a2 = 'Yes, we are available 24/7, including weekends and holidays.';
+
+// Hero lines and new sections i18n
+translations.ro.hero_line1 = 'RIDICĂM MĂRFURI';
+translations.ro.hero_line2 = 'PÂNĂ LA 30 METRI';
+translations.ro.hero_line3 = 'RAPID ȘI ÎN SIGURANȚĂ';
+translations.ro.cta_order = 'Comandă';
+translations.ro.benefits_title = 'Avantajele noastre';
+translations.ro.benefit_1 = 'Livrare și montaj în 15 minute';
+translations.ro.benefit_2 = 'Ridică până la 30 metri';
+translations.ro.benefit_3 = 'Economisește timp și bani';
+translations.ro.benefit_4 = 'Prețuri accesibile — de la 600 lei';
+translations.ro.gallery_title = 'Galerie lucrări';
+translations.ro.gallery_cap1 = 'Încărcare materiale, etajul 6';
+translations.ro.gallery_cap2 = 'Mutare mobilă, etajul 8';
+translations.ro.gallery_cap3 = 'Ridicare ferestre, etajul 8';
+
+translations.ru.hero_line1 = 'ПОДНИМАЕМ ГРУЗЫ';
+translations.ru.hero_line2 = 'ДО 30 МЕТРОВ';
+translations.ru.hero_line3 = 'БЫСТРО И БЕЗОПАСНО';
+translations.ru.cta_order = 'Заказать';
+translations.ru.benefits_title = 'Наши преимущества';
+translations.ru.benefit_1 = 'Доставка и монтаж за 15 минут';
+translations.ru.benefit_2 = 'Подъём до 30 метров';
+translations.ru.benefit_3 = 'Экономия времени и средств';
+translations.ru.benefit_4 = 'Доступные цены — от 600 леев';
+translations.ru.gallery_title = 'Галерея работ';
+translations.ru.gallery_cap1 = 'Погрузка стройматериалов, 6 этаж';
+translations.ru.gallery_cap2 = 'Переезд мебели, 8 этаж';
+translations.ru.gallery_cap3 = 'Подъём окон, 8 этаж';
+
+translations.en.hero_line1 = 'LIFTING CARGO';
+translations.en.hero_line2 = 'UP TO 30 METERS';
+translations.en.hero_line3 = 'FAST AND SAFE';
+translations.en.cta_order = 'Order';
+translations.en.benefits_title = 'Our benefits';
+translations.en.benefit_1 = 'Delivery and setup in 15 minutes';
+translations.en.benefit_2 = 'Lifts up to 30 meters';
+translations.en.benefit_3 = 'Save time and money';
+translations.en.benefit_4 = 'Affordable prices — from 600 MDL';
+translations.en.gallery_title = 'Work gallery';
+translations.en.gallery_cap1 = 'Loading materials, 6th floor';
+translations.en.gallery_cap2 = 'Moving furniture, 8th floor';
+translations.en.gallery_cap3 = 'Window lifting, 8th floor';
+
+function setLanguage(lang) {
+  const dict = translations[lang] || translations.ro;
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(node => {
+    const key = node.getAttribute('data-i18n');
+    if (dict[key]) {
+      node.textContent = dict[key];
+    }
+  });
+}
+
+function restoreLanguage() {
+  const saved = localStorage.getItem('move_lang') || 'ro';
+  const select = document.getElementById('lang');
+  if (select) select.value = saved;
+  setLanguage(saved);
+}
+
+function initLanguageSwitcher() {
+  const select = document.getElementById('lang');
+  if (!select) return;
+  select.addEventListener('change', () => {
+    const lang = select.value;
+    localStorage.setItem('move_lang', lang);
+    setLanguage(lang);
+  });
+}
+
+function initYear() {
+  const el = document.getElementById('year');
+  if (el) el.textContent = String(new Date().getFullYear());
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initYear();
+  restoreLanguage();
+  initLanguageSwitcher();
+});
+
+// One-liners i18n
+translations.ro.one_services = 'Evacuator, transport și asistență — rapid și sigur.';
+translations.ro.one_benefits = 'Ajungem rapid și lucrăm profesionist, 24/7.';
+translations.ro.one_pricing = 'Tarife corecte — de la 600 lei în Chișinău.';
+translations.ro.one_gallery = 'Câteva lucrări recente:';
+
+translations.ru.one_services = 'Эвакуатор, перевозка и помощь — быстро и безопасно.';
+translations.ru.one_benefits = 'Приезжаем быстро, работаем профессионально, 24/7.';
+translations.ru.one_pricing = 'Честные цены — от 600 леев по Кишинёву.';
+translations.ru.one_gallery = 'Недавние работы:';
+
+translations.en.one_services = 'Towing, transport and assistance — fast and safe.';
+translations.en.one_benefits = 'Fast arrival and professional work, 24/7.';
+translations.en.one_pricing = 'Fair rates — from 600 MDL in Chișinău.';
+translations.en.one_gallery = 'Some recent works:';
+
+// Navbar i18n
+translations.ro.nav_home = 'Acasă';
+translations.ro.nav_services = 'Servicii';
+translations.ro.nav_pricing = 'Tarife';
+translations.ro.nav_about = 'Despre';
+translations.ro.nav_why = 'De ce noi';
+translations.ro.nav_steps = 'Pași';
+translations.ro.nav_faq = 'Întrebări';
+translations.ro.nav_contact = 'Contact';
+
+translations.ru.nav_home = 'Главная';
+translations.ru.nav_services = 'Услуги';
+translations.ru.nav_pricing = 'Тарифы';
+translations.ru.nav_about = 'О нас';
+translations.ru.nav_why = 'Почему мы';
+translations.ru.nav_steps = 'Этапы';
+translations.ru.nav_faq = 'Вопросы';
+translations.ru.nav_contact = 'Контакт';
+
+translations.en.nav_home = 'Home';
+translations.en.nav_services = 'Services';
+translations.en.nav_pricing = 'Pricing';
+translations.en.nav_about = 'About';
+translations.en.nav_why = 'Why us';
+translations.en.nav_steps = 'Steps';
+translations.en.nav_faq = 'FAQ';
+translations.en.nav_contact = 'Contact';
+
+
+// Services bullet points i18n
+translations.ro.svc_point1 = 'Evacuator auto, utilaje și ATV';
+translations.ro.svc_point2 = 'Transport mobilier, electrocasnice, materiale';
+translations.ro.svc_point3 = 'Ridicare cu lift exterior până la 30 m';
+translations.ro.svc_point4 = 'Asistență rutieră, tracțiune și relocări';
+
+translations.ru.svc_point1 = 'Эвакуатор авто, техники и ATV';
+translations.ru.svc_point2 = 'Перевозка мебели, техники и материалов';
+translations.ru.svc_point3 = 'Подъём внешним лифтом до 30 м';
+translations.ru.svc_point4 = 'Дорожная помощь, буксировка и переезды';
+
+translations.en.svc_point1 = 'Tow truck for cars, machinery and ATVs';
+translations.en.svc_point2 = 'Transport furniture, appliances, materials';
+translations.en.svc_point3 = 'Exterior lift up to 30 m';
+translations.en.svc_point4 = 'Roadside assistance, towing and relocations';
+
+// About reasons i18n
+translations.ro.about_reason1 = 'Răspuns în 15 minute în Chișinău';
+translations.ro.about_reason2 = 'Ridicare până la 30 m cu lift exterior';
+translations.ro.about_reason3 = 'Prețuri de la 600 lei, transparență totală';
+
+translations.ru.about_reason1 = 'Выезд за 15 минут по Кишинёву';
+translations.ru.about_reason2 = 'Подъём внешним лифтом до 30 м';
+translations.ru.about_reason3 = 'Цены от 600 леев, полная прозрачность';
+
+translations.en.about_reason1 = 'Response in 15 minutes in Chișinău';
+translations.en.about_reason2 = 'Exterior lift up to 30 m';
+translations.en.about_reason3 = 'Prices from 600 MDL, fully transparent';
