@@ -48,7 +48,7 @@ html { scroll-behavior: smooth; }
 
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; }
 .brand-link { display: block; text-decoration: none; }
-.logo-img { height: 75px; width: auto; display: block; }
+.logo-img { height: 45px; width: auto; display: block; }
 
 .header-actions { display: flex; align-items: center; gap: 12px; }
 .lang-select {
