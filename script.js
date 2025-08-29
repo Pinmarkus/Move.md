@@ -118,7 +118,7 @@ translations.en.about_reason3 = 'Prices from 600 MDL, fully transparent';
 
 
 // Hero lines and new sections i18n
-translations.ro.hero_line1 = 'RIDICĂM MĂRFURI';
+translations.ro.hero_line1 = 'RIDICĂM ORICE';
 translations.ro.hero_line2 = 'PÂNĂ LA 30 METRI';
 translations.ro.hero_line3 = 'RAPID ȘI ÎN SIGURANȚĂ';
 translations.ro.cta_order = 'Comandă';
@@ -132,7 +132,7 @@ translations.ro.gallery_cap1 = 'Încărcare materiale, etajul 6';
 translations.ro.gallery_cap2 = 'Mutare mobilă, etajul 8';
 translations.ro.gallery_cap3 = 'Ridicare ferestre, etajul 8';
 
-translations.ru.hero_line1 = 'ПОДНИМАЕМ ГРУЗЫ';
+translations.ru.hero_line1 = 'ПОДНИМАЕМ ЛЮБОЙ ГРУЗ';
 translations.ru.hero_line2 = 'ДО 30 МЕТРОВ';
 translations.ru.hero_line3 = 'БЫСТРО И БЕЗОПАСНО';
 translations.ru.cta_order = 'Заказать';
@@ -146,7 +146,7 @@ translations.ru.gallery_cap1 = 'Погрузка стройматериалов,
 translations.ru.gallery_cap2 = 'Переезд мебели, 8 этаж';
 translations.ru.gallery_cap3 = 'Подъём окон, 8 этаж';
 
-translations.en.hero_line1 = 'LIFTING CARGO';
+translations.en.hero_line1 = 'LIFTING ANYTHING';
 translations.en.hero_line2 = 'UP TO 30 METERS';
 translations.en.hero_line3 = 'FAST AND SAFE';
 translations.en.cta_order = 'Order';
