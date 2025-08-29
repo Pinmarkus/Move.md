@@ -4,7 +4,7 @@ const translations = {
     language_label: 'Limbă',
     cta_call: 'Comanda acum',
     request_quote: 'Cere ofertă',
-    tagline: 'Transport cu evacuator, oriunde, oricând.',
+    tagline: 'Ridicăm mobila, ferestre, materiale de construcții.',
     hero_title: 'Transportăm tot ce ai nevoie, în siguranță',
     hero_subtitle: 'De la 600 lei. Sună acum: 060786666',
     services_title: 'Servicii',
