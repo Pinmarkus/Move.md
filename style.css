@@ -39,6 +39,19 @@ html { scroll-behavior: smooth; }
   box-shadow: 0 2px 12px rgba(0,0,0,0.12);
 }
 
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -87,6 +100,7 @@ html { scroll-behavior: smooth; }
 .hero-photo {
   /* Slideshow backgrounds controlled via CSS vars set from JS */
   background: #0b1220 var(--hero-bg, url('images/5.jpg')) center/cover no-repeat;
+  background-attachment: fixed;
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -166,22 +180,23 @@ html { scroll-behavior: smooth; }
   border-radius: 12px; 
   padding: 10px 12px; 
 }
+
 /* --- Titlu principal Avantajele noastre --- */
 .benefits-section {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* pe verticală */
-  align-items: center;     /* pe orizontală */
-  min-height: 100vh;       /* ocupă tot ecranul */
+  justify-content: center; 
+  align-items: center;    
+  min-height: 100vh;       
   text-align: center;
 }
 
 #benefits .section-title {
-  text-align: center;   /* îl centrează pe orizontală */
-  margin-left: auto;    /* împinge spre centru */
-  margin-right: auto;   /* împinge spre centru */
+  text-align: center;   
+  margin-left: auto;   
+  margin-right: auto;  
   display: block;
-  width: fit-content;   /* se micșorează la dimensiunea textului */
+  width: fit-content;   
 }
 
 
@@ -197,7 +212,7 @@ html { scroll-behavior: smooth; }
 .benefit {
   display: flex;
   flex-direction: column;
-  align-items: center; /* totul pe mijloc */
+  align-items: center; 
   text-align: center;
   border: 2px solid #facc15;
   border-radius: 12px;
@@ -226,6 +241,7 @@ html { scroll-behavior: smooth; }
   margin: 0;
 }
 
+
 /* Responsive pentru avantaje */
 @media (max-width: 900px) {
   .benefits-grid { grid-template-columns: 1fr 1fr; }
@@ -242,7 +258,7 @@ html { scroll-behavior: smooth; }
 .shot { margin: 0; border-radius: 12px; overflow: hidden; border: 0; background: #fff; position: relative; }
 .shot::after { content: ''; position: absolute; inset: 0; border: 8px solid #facc15; border-radius: 12px; pointer-events: none; }
 .gallery-grid { justify-items: stretch; align-items: stretch; }
-.shot { margin: 0; border-radius: 12px; overflow: hidden; border: 1px solid #e5e7eb; background: #fff; }
+.shot { margin: 0; border-radius: 12px; overflow: hidden; border: 1px solid #facc15; background: #fff; }
 .shot img { width: 100%; display: block; height: 280px; object-fit: cover; object-position: center; }
 /* Make second row images slightly taller and fill without white margins */
 .gallery-grid .shot:nth-child(n+4) img { height: 360px; object-fit: cover; object-position: center; }
@@ -337,6 +353,7 @@ section { scroll-margin-top: 100px; }
 .phone a { color: #2563eb; text-decoration: none; }
 .email a { color: #111827; text-decoration: none; }
 .email a:hover { text-decoration: underline; }
+
 
 .socials-icons {
   margin-top: 16px;
