@@ -4,20 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Move.md — Lift mobil, Autolift și transport de materiale în Chișinău</title>
-  <link rel="icon" href="https://www.move.md/images/logo1.png" type="image/png">
+  <link rel="icon" href="https://www.move.md/images/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="https://www.move.md/images/logo.png">
 
   <meta name="description" content="Ridicăm mobila, ferestre, materiale de construcții.">
+  
+  <!-- Logo pentru Google Search -->
+  <meta property="og:logo" content="https://www.move.md/images/logo.png">
+  <link rel="image_src" href="https://www.move.md/images/logo.png">
 
   <meta property="og:title" content="Move.md — Lift mobil, Autolift și transport de materiale în Chișinău">
   <meta property="og:description" content="Ridicăm mobila, ferestre, materiale de construcții.">
-  <meta property="og:image" content="https://www.move.md/images/11.jpg">
+  <meta property="og:image" content="https://www.move.md/images/logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://www.move.md/">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Move.md — Lift mobil, Autolift și transport de materiale în Chișinău">
   <meta name="twitter:description" content="Ridicăm mobila, ferestre, materiale de construcții.">
-  <meta name="twitter:image" content="https://www.move.md/images/11.jpg">
+  <meta name="twitter:image" content="https://www.move.md/images/logo.png">
 
   <script type="application/ld+json">
   {
@@ -25,7 +32,12 @@
     "@type": "Organization",
     "url": "https://www.move.md",
     "name": "Move.md",
-    "logo": "https://www.move.md/images/logo1.png",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.move.md/images/logo.png",
+      "width": "512",
+      "height": "512"
+    },
     "contactPoint": [{
       "@type": "ContactPoint",
       "telephone": "+37360786666",
@@ -47,7 +59,7 @@
       "name": "Move.md",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.move.md/images/logo1.png"
+        "url": "https://www.move.md/images/logo.png"
       }
     }
   }
@@ -63,24 +75,69 @@
         <div class="container header-inner">
             <div class="brand">
                 <a href="#top" class="brand-link">
-                    <img src="images/logo.png" alt="" class="logo-img" />
+                    <img src="images/logo.png" alt="Move.md Logo" class="logo-img" />
                 </a>
             </div>
-            <nav class="main-nav" aria-label="Primary">
+            
+            <!-- Desktop Navigation -->
+            <nav class="main-nav desktop-nav" aria-label="Primary">
                 <a href="#top" class="nav-link" data-i18n="nav_home">Acasă</a>
                 <a href="#services" class="nav-link" data-i18n="nav_services">Servicii</a>
-                
                 <a href="#about" class="nav-link" data-i18n="nav_about">Despre</a>
                 <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
             </nav>
-            <nav class="header-actions">
-                <label for="lang" class="visually-hidden" data-i18n="language_label">Limbă</label>
-                <select id="lang" class="lang-select" aria-label="Language selector">
-                    <option value="ro" selected>RO</option>
-                    <option value="ru">RU</option>
-                    <option value="en">EN</option>
-                </select>
+            
+            <nav class="header-actions desktop-actions">
                 <a class="btn btn-primary call-btn" href="tel:060786666" data-i18n="cta_call">Comandă acum</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay">
+            <nav class="mobile-nav">
+                <div class="mobile-nav-header">
+                    <img src="images/logo.png" alt="Move.md Logo" class="mobile-logo" />
+                    <button class="mobile-menu-close" aria-label="Close mobile menu">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="mobile-nav-links">
+                    <a href="#top" class="mobile-nav-link" data-i18n="nav_home">Acasă</a>
+                    <a href="#services" class="mobile-nav-link" data-i18n="nav_services">Servicii</a>
+                    <a href="#about" class="mobile-nav-link" data-i18n="nav_about">Despre</a>
+                    <a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">Contact</a>
+                </div>
+
+                <div class="mobile-contact-info">
+                    <div class="mobile-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:060786666">060786666</a>
+                    </div>
+                    <div class="mobile-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:vprijilevschi33@gmail.com">vprijilevschi33@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="mobile-language-selector">
+                    <select id="mobile-lang" class="mobile-lang-select" aria-label="Language selector">
+                        <option value="ro" selected>Română</option>
+                        <option value="ru">Русский</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+
+                <div class="mobile-cta">
+                    <a class="btn btn-primary mobile-call-btn" href="tel:060786666" data-i18n="cta_call">Comandă acum</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -88,12 +145,12 @@
     <main>
         <section class="hero hero-photo" id="top">
             <div class="container hero-inner center">
-                <h1 class="hero-title-lines">
-                    <span class="line" data-i18n="hero_line1">RIDICĂM ORICE</span>
-                    <span class="line" data-i18n="hero_line2">PÂNĂ LA 30 METRI</span>
-                    <span class="line" data-i18n="hero_line3">RAPID ȘI ÎN SIGURANȚĂ</span>
+                <h1 class="hero-title-lines fade-in">
+                    <span class="line fade-in animate-delay-1" data-i18n="hero_line1">RIDICĂM ORICE</span>
+                    <span class="line fade-in animate-delay-2" data-i18n="hero_line2">PÂNĂ LA 30 METRI</span>
+                    <span class="line fade-in animate-delay-3" data-i18n="hero_line3">RAPID ȘI ÎN SIGURANȚĂ</span>
                 </h1>
-                <div class="hero-ctas">
+                <div class="hero-ctas fade-in animate-delay-4">
                     <a class="btn btn-primary btn-cta" href="tel::060786666" data-i18n="cta_call">Comandă</a>
                 </div>
             </div>
@@ -101,14 +158,14 @@
 
         <section class="section-box" id="services">
             <div class="container">
-                <h2 class="section-title" data-i18n="services_title">Servicii</h2>
-                <div class="services-points-box">
+                <h2 class="section-title fade-in" data-i18n="services_title">Servicii</h2>
+                <div class="services-points-box fade-in">
                     <ul class="services-points">
-                        <li data-i18n="svc_point1">Ridicăm și coborâm orice până la ..</li>
-                        <li data-i18n="svc_point2">Ridicare, coborâre materiale de construcții, deșeuri</li>
-                        <li data-i18n="svc_point3">Evacuare deșeuri</li>
-                        <li data-i18n="svc_point4">Transport, container</li>
-                        <li data-i18n="svc_point5">Hamali</li>
+                        <li class="slide-left animate-delay-1" data-i18n="svc_point1">Ridicăm și coborâm orice până la ..</li>
+                        <li class="slide-left animate-delay-2" data-i18n="svc_point2">Ridicare, coborâre materiale de construcții, deșeuri</li>
+                        <li class="slide-left animate-delay-3" data-i18n="svc_point3">Evacuare deșeuri</li>
+                        <li class="slide-left animate-delay-4" data-i18n="svc_point4">Transport, container</li>
+                        <li class="slide-left animate-delay-5" data-i18n="svc_point5">Hamali</li>
                     </ul>
                 </div>
             </div>
@@ -117,30 +174,30 @@
 
         <section class="benefits section-box" id="benefits">
             <div class="container">
-              <h2 class="section-title" data-i18n="benefits_title">Avantajele noastre</h2>
+              <h2 class="section-title fade-in" data-i18n="benefits_title">Avantajele noastre</h2>
               <div class="benefits-grid">
-                <div class="benefit">
+                <div class="benefit scale-in animate-delay-1">
                   <div class="benefit-ico"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-icon lucide-shield"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg></div>
                   <div class="benefit-text" data-i18n="benefit_1">Mobilier Protejat</div>
                   <p class="benefit-desc" data-i18n="benefit_1_desc">
                     Protejarea mobilierului va fi mult mai bună (riscul de atingere pe scări fiind eliminat).
                   </p>
                 </div>
-                <div class="benefit">
+                <div class="benefit scale-in animate-delay-2">
                   <div class="benefit-ico"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench-icon lucide-wrench"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg></div>
                   <div class="benefit-text" data-i18n="benefit_2">Fără Demontare</div>
                   <p class="benefit-desc" data-i18n="benefit_2_desc">
                     Posibilitatea ca anumite piese de mobilier să fie luate ca atare fără demontarea lor.
                   </p>
                 </div>
-                <div class="benefit">
+                <div class="benefit scale-in animate-delay-3">
                   <div class="benefit-ico"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap-icon lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></div>
                   <div class="benefit-text" data-i18n="benefit_3">Eficiență</div>
                   <p class="benefit-desc" data-i18n="benefit_3_desc">
                     Suntem soluția cea mai eficientă pentru a ridica sau a coborî mobila de la domiciliul dumneavoastră.
                   </p>
                 </div>
-                <div class="benefit">
+                <div class="benefit scale-in animate-delay-4">
                   <div class="benefit-ico"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-icon lucide-check"><path d="M20 6 9 17l-5-5"/></svg></div>
                   <div class="benefit-text" data-i18n="benefit_4">Fără Probleme</div>
                   <p class="benefit-desc" data-i18n="benefit_4_desc">
@@ -159,28 +216,28 @@
 
         <section class="gallery section-box" id="gallery">
             <div class="container">
-                <h2 class="section-title" data-i18n="gallery_title">Galerie</h2>
+                <h2 class="section-title fade-in" data-i18n="gallery_title">Galerie</h2>
                 <div class="gallery-grid">
-                    <figure class="shot">
+                    <figure class="shot scale-in animate-delay-1">
                         <img src="images/11.jpg" alt="" />
                     </figure>
-                    <figure class="shot">
+                    <figure class="shot scale-in animate-delay-2">
                         <img src="images/5.jpg" alt="" />
                     </figure>
-                    <figure class="shot">
+                    <figure class="shot scale-in animate-delay-3">
                         <img src="images/1.jpg" alt="" />
                     </figure>
-                    <figure class="shot">
+                    <figure class="shot scale-in animate-delay-4">
                         <img src="images/12.jpg" alt="" />
                     </figure>
-                    <figure class="shot">
+                    <figure class="shot scale-in animate-delay-5">
                         <img src="images/3.jpg" alt="" />
                     </figure>
-                    <figure class="shot">
+                    <figure class="shot scale-in animate-delay-1">
                         <img src="images/7.jpg" alt="" />
                     </figure>
                 </div>
-                <div class="gallery-actions">
+                <div class="gallery-actions fade-in">
                     <button type="button" class="btn btn-cta gallery-toggle" aria-expanded="false" data-i18n="gallery_show_more">Arată mai multe</button>
                 </div>
             </div>
@@ -188,21 +245,21 @@
 
         <section class="about" id="about">
             <div class="container">
-                <h2 class="section-title about-center" data-i18n="about_title">Despre Move.md</h2>
-                <p class="section-text about-center" data-i18n="about_desc">
+                <h2 class="section-title about-center fade-in" data-i18n="about_title">Despre Move.md</h2>
+                <p class="section-text about-center fade-in" data-i18n="about_desc">
                     Suntem o echipă specializată în ridicarea/coborârea materialelor de construcții, mobilă, deșeuri și transport în Republica Moldova. Intervenim 24/7.
                 </p>
                 
                 <div class="about-reasons">
-                    <div class="reason">
+                    <div class="reason slide-right animate-delay-1">
                         <div class="num">1</div>
                         <div class="txt" data-i18n="about_reason1">Răspuns în 15 minute în Chișinău</div>
                     </div>
-                    <div class="reason">
+                    <div class="reason slide-right animate-delay-2">
                         <div class="num">2</div>
                         <div class="txt" data-i18n="about_reason2">Ridicare până la 30 m cu lift exterior</div>
                     </div>
-                    <div class="reason">
+                    <div class="reason slide-right animate-delay-3">
                         <div class="num">3</div>
                         <div class="txt" data-i18n="about_reason3">Prețuri de la 600 lei, transparență totală</div>
                     </div>
@@ -212,13 +269,13 @@
         
         <section id="contact" class="contact">        
         <div class="contact-box">
-            <h2 class="section-title" data-i18n="contact_title">Contact</h2>
-            <p class="section-text" data-i18n="contact_desc">Suntem disponibili 24/7. Ne găsești la</p>
-            <p class="phone"><span data-i18n="phone_label">Telefon</span>: <a href="tel:060786666">060786666</a></p>
-            <p class="email"><a href="mailto:vprijilevschi33@gmail.com">vprijilevschi33@gmail.com</a></p>
+            <h2 class="section-title fade-in" data-i18n="contact_title">Contact</h2>
+            <p class="section-text fade-in" data-i18n="contact_desc">Suntem disponibili 24/7. Ne găsești la</p>
+            <p class="phone slide-left animate-delay-1"><span data-i18n="phone_label">Telefon</span>: <a href="tel:060786666">060786666</a></p>
+            <p class="email slide-left animate-delay-2"><a href="mailto:vprijilevschi33@gmail.com">vprijilevschi33@gmail.com</a></p>
         
             <!-- Rețele sociale cu iconițe circulare -->
-            <div class="socials-icons">
+            <div class="socials-icons scale-in animate-delay-3">
                 <a href="https://www.tiktok.com/@move.md_liftmobil" target="_blank" class="social-icon tiktok" title="TikTok">
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
@@ -228,7 +285,7 @@
             </div>
             
         
-            <div class="contact-ctas">
+            <div class="contact-ctas fade-in animate-delay-4">
                 <a class="btn btn-primary" href="tel:060786666" data-i18n="cta_call">Sună acum</a>
             </div>
         </div>

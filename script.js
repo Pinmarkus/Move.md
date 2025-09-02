@@ -1,3 +1,100 @@
+// Scroll Animations with Intersection Observer
+function initScrollAnimations() {
+  const animatedElements = document.querySelectorAll('.fade-in, .slide-left, .slide-right, .scale-in');
+  
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+  
+  animatedElements.forEach(element => {
+    observer.observe(element);
+  });
+}
+
+// Mobile Menu Toggle Functionality
+function initMobileMenu() {
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+  const mobileMenuClose = document.querySelector('.mobile-menu-close');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+  const body = document.body;
+
+  // Toggle mobile menu
+  function toggleMobileMenu() {
+    const isActive = mobileMenuOverlay.classList.contains('active');
+    
+    if (isActive) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  }
+
+  function openMobileMenu() {
+    mobileMenuOverlay.classList.add('active');
+    mobileMenuBtn.classList.add('active');
+    mobileMenuBtn.setAttribute('aria-expanded', 'true');
+    body.style.overflow = 'hidden'; // Prevent background scrolling
+  }
+
+  function closeMobileMenu() {
+    mobileMenuOverlay.classList.remove('active');
+    mobileMenuBtn.classList.remove('active');
+    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    body.style.overflow = ''; // Restore scrolling
+  }
+
+  // Event listeners
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+  }
+
+  if (mobileMenuClose) {
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+  }
+
+  // Close menu when clicking on overlay
+  if (mobileMenuOverlay) {
+    mobileMenuOverlay.addEventListener('click', (e) => {
+      if (e.target === mobileMenuOverlay) {
+        closeMobileMenu();
+      }
+    });
+  }
+
+  // Close menu when clicking on navigation links
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileMenu();
+    });
+  });
+
+  // Close menu on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
+      closeMobileMenu();
+    }
+  });
+
+  // Mobile language selector only (desktop removed)
+}
+
+// Initialize animations and mobile menu when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  initScrollAnimations();
+  initMobileMenu();
+});
+
 const translations = {
   ro: {
     brand: 'Move.md',
@@ -319,8 +416,8 @@ function initHeroSlideshow() {
   // Initialize first background
   hero.style.setProperty('--hero-bg', `url('${imageUrls[currentIndex]}')`);
 
-  const visibleDurationMs = 3000; // fully visible time per image
-  const fadeDurationMs = 500; // must match CSS transition
+  const visibleDurationMs = 4000; // fully visible time per image (optimized)
+  const fadeDurationMs = 800; // must match CSS transition (smoother)
 
   function cycleOnce() {
     setTimeout(() => {
