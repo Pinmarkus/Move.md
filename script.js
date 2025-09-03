@@ -271,18 +271,37 @@ function setLanguage(lang) {
 function restoreLanguage() {
   const saved = localStorage.getItem('move_lang') || 'ro';
   const select = document.getElementById('lang');
+  const mobileSelect = document.getElementById('mobile-lang');
   if (select) select.value = saved;
+  if (mobileSelect) mobileSelect.value = saved;
   setLanguage(saved);
 }
 
 function initLanguageSwitcher() {
   const select = document.getElementById('lang');
-  if (!select) return;
-  select.addEventListener('change', () => {
-    const lang = select.value;
-    localStorage.setItem('move_lang', lang);
-    setLanguage(lang);
-  });
+  const mobileSelect = document.getElementById('mobile-lang');
+  
+  // Desktop language selector
+  if (select) {
+    select.addEventListener('change', () => {
+      const lang = select.value;
+      localStorage.setItem('move_lang', lang);
+      setLanguage(lang);
+      // Sync mobile selector
+      if (mobileSelect) mobileSelect.value = lang;
+    });
+  }
+  
+  // Mobile language selector
+  if (mobileSelect) {
+    mobileSelect.addEventListener('change', () => {
+      const lang = mobileSelect.value;
+      localStorage.setItem('move_lang', lang);
+      setLanguage(lang);
+      // Sync desktop selector
+      if (select) select.value = lang;
+    });
+  }
 }
 
 function initYear() {
@@ -471,8 +490,16 @@ function initGalleryToggle() {
 
   // Update label on language change too
   const select = document.getElementById('lang');
+  const mobileSelect = document.getElementById('mobile-lang');
+  
   if (select) {
     select.addEventListener('change', () => {
+      updateLabel(grid.classList.contains('is-expanded'));
+    });
+  }
+  
+  if (mobileSelect) {
+    mobileSelect.addEventListener('change', () => {
       updateLabel(grid.classList.contains('is-expanded'));
     });
   }
