@@ -452,10 +452,15 @@ html { scroll-behavior: smooth; }
   align-items: center;
 }
 
-/* Fix for iOS background-attachment: fixed issues */
+/* Fix for iOS background-attachment: fixed issues - use transform instead */
 @supports (-webkit-touch-callout: none) {
   .hero-photo {
     background-attachment: scroll;
+    will-change: transform;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 }
 .hero-photo::before {
