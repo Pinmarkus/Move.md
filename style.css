@@ -451,6 +451,13 @@ html { scroll-behavior: smooth; }
   display: flex;
   align-items: center;
 }
+
+/* Fix for iOS background-attachment: fixed issues */
+@supports (-webkit-touch-callout: none) {
+  .hero-photo {
+    background-attachment: scroll;
+  }
+}
 .hero-photo::before {
   content: '';
   position: absolute; inset: 0;

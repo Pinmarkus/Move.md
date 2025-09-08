@@ -269,7 +269,7 @@ function setLanguage(lang) {
 }
 
 function restoreLanguage() {
-  const saved = localStorage.getItem('move_lang') || 'ro';
+  const saved = 'ro'; // Always default to Romanian
   const select = document.getElementById('lang');
   const mobileSelect = document.getElementById('mobile-lang');
   if (select) select.value = saved;
